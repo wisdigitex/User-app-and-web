@@ -7,7 +7,7 @@ import 'package:sixam_mart/interfaces/repository_interface.dart';
 abstract class AuthRepositoryInterface extends RepositoryInterface{
   bool isSharedPrefNotificationActive();
   Future<ResponseModel> registration(SignUpBodyModel signUpBody);
-  Future<Response> login({String? phone, String? password});
+  Future<Response> login({String? gmail, String? password});
   Future<bool> saveUserToken(String token);
   Future<Response> updateToken({String notificationDeviceToken = ''});
   Future<bool> saveSharedPrefGuestId(String id);

@@ -37,11 +37,11 @@ class AuthRepository implements AuthRepositoryInterface{
   }
 
   @override
-  Future<Response> login({String? phone, String? password}) async {
+  Future<Response> login({String? gmail, String? password}) async {
     String guestId = getSharedPrefGuestId();
     String? deviceToken = await saveDeviceToken();
     Map<String, String> data = {
-      "phone": phone!,
+      "gmail": gmail!,
       "password": password!,
       "cm_firebase_token": deviceToken!,
     };
