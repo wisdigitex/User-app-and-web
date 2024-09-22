@@ -5,7 +5,7 @@ import 'package:sixam_mart/features/auth/domain/models/social_log_in_body.dart';
 abstract class AuthServiceInterface{
   bool isSharedPrefNotificationActive();
   Future<ResponseModel> registration(SignUpBodyModel signUpBody, bool isCustomerVerificationOn);
-  Future<ResponseModel> login({String? gmail, String? password, required bool isCustomerVerificationOn});
+  Future<ResponseModel> login({String? phone, String? password, required bool isCustomerVerificationOn});
   Future<ResponseModel> guestLogin();
   Future<bool> loginWithSocialMedia(SocialLogInBody socialLogInBody, int timeout, bool isCustomerVerificationOn);
   Future<bool> registerWithSocialMedia(SocialLogInBody socialLogInBody, bool isCustomerVerificationOn);

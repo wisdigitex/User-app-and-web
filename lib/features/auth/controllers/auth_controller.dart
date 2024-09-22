@@ -58,10 +58,10 @@ class AuthController extends GetxController implements GetxService {
     return responseModel;
   }
 
-  Future<ResponseModel> login(String? gmail, String password) async {
+  Future<ResponseModel> login(String? phone, String password) async {
     _isLoading = true;
     update();
-    ResponseModel responseModel = await authServiceInterface.login(gmail: gmail, password: password, isCustomerVerificationOn: Get.find<SplashController>().configModel!.customerVerification!);
+    ResponseModel responseModel = await authServiceInterface.login(phone: phone, password: password, isCustomerVerificationOn: Get.find<SplashController>().configModel!.customerVerification!);
     if (responseModel.isSuccess && !Get.find<SplashController>().configModel!.customerVerification! && responseModel.isPhoneVerified!) {
       Get.find<ProfileController>().getUserInfo();
     }

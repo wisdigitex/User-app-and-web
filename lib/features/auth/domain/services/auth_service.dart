@@ -32,8 +32,8 @@ class AuthService implements AuthServiceInterface{
   }
 
   @override
-  Future<ResponseModel> login({String? gmail, String? password, required bool isCustomerVerificationOn}) async {
-    Response response = await authRepositoryInterface.login(gmail: gmail, password: password);
+  Future<ResponseModel> login({String? phone, String? password, required bool isCustomerVerificationOn}) async {
+    Response response = await authRepositoryInterface.login(phone: phone, password: password);
     ResponseModel responseModel;
     if (response.statusCode == 200) {
 
