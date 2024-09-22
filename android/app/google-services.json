@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "987650730174",
+    "project_id": "eniza-hypermarket",
+    "storage_bucket": "eniza-hypermarket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987650730174:android:c5529d545abb76716996ef",
+        "android_client_info": {
+          "package_name": "com.enizahypermarket.user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj6pdirJRGK-bkFTJ14nxySjM_ITqjj-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
